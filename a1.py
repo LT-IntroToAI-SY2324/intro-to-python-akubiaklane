@@ -16,6 +16,8 @@ from typing import List, TypeVar
 
 
 def absolute(n: int) -> int:
+    n = n * -1
+    return n
     """Gives the absolute value of the passed in number. Cannot use the built in
     function `abs`.
 
@@ -29,6 +31,10 @@ def absolute(n: int) -> int:
 
 
 def factorial(n: int) -> int:
+    for i in range(1, n + 1):
+        result *= i
+        return result
+        
     """Takes a number n, and computes the factorial n! You can assume the passed in
     number will be positive
 
@@ -45,6 +51,8 @@ T = TypeVar("T")
 
 
 def every_other(lst: List[T]) -> List[T]:
+    new_list = lst[::2]
+    return new_list
     """Takes a list and returns a list of every other element in the list, starting with
     the first.
 
@@ -59,6 +67,9 @@ def every_other(lst: List[T]) -> List[T]:
 
 
 def sum_list(lst: List[int]) -> int:
+    for x in lst:
+        sum += x
+    return sum
     """Takes a list of numbers, and returns the sum of the numbers in that list. Cannot
     use the built in function `sum`.
 
@@ -72,8 +83,10 @@ def sum_list(lst: List[int]) -> int:
 
 
 def mean(lst: List[int]) -> float:
+    mean = sum(lst)/len(lst)
+    return mean
     """Takes a list of numbers, and returns the mean of the numbers.
-
+    
     Args:
         lst - a list of numbers
 
