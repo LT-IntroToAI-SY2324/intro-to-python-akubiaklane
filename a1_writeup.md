@@ -13,11 +13,12 @@ Mr. Berg will look at all your files to determine what you have completed.  If t
 ## Reflection Questions
 
 1. What is your initial thoughts about the python programming language?
-
+That it's easier than java and it seems more simple to understand so far.
 
 
 2. Describe some similarities and differences that you found between python and other programming languages you have used in the past?
-
+Python and Java are both object oriented programming languages. Python doesn't need semi colons at the end of each line. A lot of things are written differently or work differently in python than in Java, like for loops. It seems like an easier language.
 
 
 3. What are some things that you learned through this assignment?
+I learned the basics of Python and some things I didn't know about like slicing lists.

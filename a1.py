@@ -97,6 +97,14 @@ def mean(lst: List[int]) -> float:
 
 
 def median(lst: List[int]) -> float:
+
+    if len(lst) % 2 == 1:
+        return(lst[len(lst) // 2])
+    else:
+        el1 = lst[len(lst)//2]
+        el2 = lst[len(lst)//2 -1]
+        return (el1 + el2) / 2
+        
     """Takes an ordered list of numbers, and returns the median of the numbers.
 
     If the list has an even number of values, it computes the mean of the two center
@@ -112,6 +120,26 @@ def median(lst: List[int]) -> float:
 
 
 def duck_duck_goose(lst: List[str]) -> List[str]:
+i = 0
+current = "duck1"
+while len(lst) > 2:
+    if current == "duck1":
+        current = "duck"2
+        i += 1
+    elif current == "duck2":
+        current = "goose"
+        i += 1
+    else: 
+        curent = "duck1"
+        print(lst)
+        lst = lst[:i] + lst[i + 1:]
+        print (lst)
+
+    if i >= len(lst):
+        i -= len(lst)
+
+
+
     """Given an list of names (strings), play 'duck duck goose' with it, knocking out
     every third name (wrapping around) until only two names are left.
 
